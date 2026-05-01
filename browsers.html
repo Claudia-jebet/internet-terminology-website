@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Browsers — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">NET//TERMS</a>
+    <div class="nav-links">
+      <a href="www.html">WWW</a>
+      <a href="tcpip.html">TCP/IP</a>
+      <a href="browsers.html">Browsers</a>
+      <a href="servers.html">Servers</a>
+      <a href="url.html">URL</a>
+      <a href="dns.html">DNS</a>
+      <a href="http.html">HTTP</a>
+      <a href="intranet.html">Intranet</a>
+      <a href="extranet.html">Extranet</a>
+      <a href="multitier.html">Multitier</a>
+      <a href="ftp.html">FTP</a>
+      <a href="html.html">HTML</a>
+      <a href="web1.html">Web 1.0</a>
+      <a href="web2.html">Web 2.0</a>
+      <a href="web3.html">Web 3.0</a>
+      <a href="web4.html">Web 4.0</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="term-hero">
+    <div class="term-tag">Term 03 of 16</div>
+    <h1 class="term-title">Web Browsers</h1>
+    <div class="term-abbr">Client Software — Chrome, Firefox, Safari, Edge</div>
+    <div class="term-divider"></div>
+  </div>
+  
+<div class="content-block">
+  <h2>What is a Web Browser?</h2>
+  <p>A web browser is a software application that retrieves, interprets, and displays web pages from the Internet. It acts as the <strong>client</strong> in the client-server model — it makes requests and receives responses.</p>
+  <p>Popular browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, and Opera.</p>
+  <div class="highlight">A browser does not just display text — it interprets HTML structure, applies CSS styling, and executes JavaScript to create the interactive pages you see.</div>
+</div>
+<div class="content-block">
+  <h2>How a Browser Works</h2>
+  <ul>
+    <li>User types a URL and hits Enter</li>
+    <li>Browser performs a DNS lookup to find the server IP address</li>
+    <li>Browser sends an HTTP GET request to the web server</li>
+    <li>Server responds with HTML, CSS, and JavaScript files</li>
+    <li>Browser parses and renders the page visually</li>
+  </ul>
+  <div class="diagram-box">
+    <div class="diagram-label">Browser Rendering Process</div>
+    <svg width="100%" viewBox="0 0 700 80" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#00ff88"/></marker></defs>
+      <rect x="5" y="15" width="110" height="50" rx="4" fill="rgba(0,255,136,0.1)" stroke="#00ff88" stroke-width="1"/>
+      <text x="60" y="37" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">User Types</text>
+      <text x="60" y="52" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">URL</text>
+      <line x1="117" y1="40" x2="153" y2="40" stroke="#00ff88" stroke-width="1.5" marker-end="url(#b)"/>
+      <rect x="155" y="15" width="110" height="50" rx="4" fill="rgba(0,255,136,0.1)" stroke="#00ff88" stroke-width="1"/>
+      <text x="210" y="37" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">DNS</text>
+      <text x="210" y="52" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">Lookup</text>
+      <line x1="267" y1="40" x2="303" y2="40" stroke="#00ff88" stroke-width="1.5" marker-end="url(#b)"/>
+      <rect x="305" y="15" width="110" height="50" rx="4" fill="rgba(0,136,255,0.1)" stroke="#0088ff" stroke-width="1"/>
+      <text x="360" y="37" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">HTTP</text>
+      <text x="360" y="52" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">Request</text>
+      <line x1="417" y1="40" x2="453" y2="40" stroke="#00ff88" stroke-width="1.5" marker-end="url(#b)"/>
+      <rect x="455" y="15" width="110" height="50" rx="4" fill="rgba(0,136,255,0.1)" stroke="#0088ff" stroke-width="1"/>
+      <text x="510" y="37" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">Receive</text>
+      <text x="510" y="52" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">HTML/CSS/JS</text>
+      <line x1="567" y1="40" x2="603" y2="40" stroke="#00ff88" stroke-width="1.5" marker-end="url(#b)"/>
+      <rect x="605" y="15" width="88" height="50" rx="4" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
+      <text x="649" y="37" fill="#00ff88" font-family="DM Sans" font-size="10" text-anchor="middle">Render</text>
+      <text x="649" y="52" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">Page</text>
+    </svg>
+  </div>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/400px-Firefox_logo%2C_2019.svg.png" alt="Web browsers" class="term-image" onerror="this.style.display='none'"/>
+
+</div>
+
+<footer>Internet Terminology Reference Site &nbsp;|&nbsp; <a href="../index.html" style="color:var(--accent);text-decoration:none;">← Back to Home</a></footer>
+
+</body>
+</html>
