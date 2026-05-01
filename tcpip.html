@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transmission Control Protocol / Internet Protocol — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">NET//TERMS</a>
+    <div class="nav-links">
+      <a href="www.html">WWW</a>
+      <a href="tcpip.html">TCP/IP</a>
+      <a href="browsers.html">Browsers</a>
+      <a href="servers.html">Servers</a>
+      <a href="url.html">URL</a>
+      <a href="dns.html">DNS</a>
+      <a href="http.html">HTTP</a>
+      <a href="intranet.html">Intranet</a>
+      <a href="extranet.html">Extranet</a>
+      <a href="multitier.html">Multitier</a>
+      <a href="ftp.html">FTP</a>
+      <a href="html.html">HTML</a>
+      <a href="web1.html">Web 1.0</a>
+      <a href="web2.html">Web 2.0</a>
+      <a href="web3.html">Web 3.0</a>
+      <a href="web4.html">Web 4.0</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="term-hero">
+    <div class="term-tag">Term 02 of 16</div>
+    <h1 class="term-title">Transmission Control Protocol / Internet Protocol</h1>
+    <div class="term-abbr">TCP/IP — The backbone of Internet communication</div>
+    <div class="term-divider"></div>
+  </div>
+  
+<div class="content-block">
+  <h2>What is TCP/IP?</h2>
+  <p>TCP/IP is the foundational set of communication protocols (rules) that govern how data is sent, received, and routed across the Internet. It is not a single protocol but a suite of protocols working together.</p>
+  <ul>
+    <li><strong>IP (Internet Protocol)</strong> — handles addressing and routing. Every device on the Internet has a unique IP address. IP breaks data into packets and routes each one to the correct destination.</li>
+    <li><strong>TCP (Transmission Control Protocol)</strong> — ensures reliability. It breaks data into packets, sends them, checks they all arrived, and reassembles them in the correct order. If any packet is lost, TCP requests it again.</li>
+  </ul>
+  <div class="highlight">Think of IP as the postal address system and TCP as the delivery confirmation — making sure every package actually arrives safely.</div>
+</div>
+<div class="content-block">
+  <h2>The TCP/IP 4-Layer Model</h2>
+  <div class="diagram-box">
+    <div class="diagram-label">TCP/IP Layers</div>
+    <svg width="100%" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="680" height="38" rx="4" fill="rgba(124,58,237,0.15)" stroke="#7c3aed" stroke-width="1"/>
+      <text x="350" y="27" fill="#c4b5fd" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle">Application Layer</text>
+      <text x="350" y="42" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">HTTP, FTP, DNS, SMTP</text>
+      <rect x="10" y="55" width="680" height="38" rx="4" fill="rgba(0,136,255,0.15)" stroke="#0088ff" stroke-width="1"/>
+      <text x="350" y="72" fill="#7ab3ff" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle">Transport Layer — TCP</text>
+      <text x="350" y="87" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">Breaks data into packets, ensures delivery</text>
+      <rect x="10" y="100" width="680" height="38" rx="4" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
+      <text x="350" y="117" fill="#00ff88" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle">Internet Layer — IP</text>
+      <text x="350" y="132" fill="#888" font-family="DM Sans" font-size="10" text-anchor="middle">Addresses and routes packets across networks</text>
+      <rect x="10" y="145" width="680" height="30" rx="4" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1"/>
+      <text x="350" y="165" fill="#fcd34d" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle">Network Access Layer — Physical cables, Wi-Fi, Ethernet</text>
+    </svg>
+  </div>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/600px-UDP_encapsulation.svg.png" alt="TCP/IP model diagram" class="term-image" onerror="this.style.display='none'"/>
+
+</div>
+
+<footer>Internet Terminology Reference Site &nbsp;|&nbsp; <a href="../index.html" style="color:var(--accent);text-decoration:none;">← Back to Home</a></footer>
+
+</body>
+</html>
