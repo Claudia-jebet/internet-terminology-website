@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domain Name Server — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">NET//TERMS</a>
+    <div class="nav-links">
+      <a href="www.html">WWW</a><a href="tcpip.html">TCP/IP</a><a href="browsers.html">Browsers</a><a href="servers.html">Servers</a><a href="url.html">URL</a><a href="dns.html">DNS</a><a href="http.html">HTTP</a><a href="intranet.html">Intranet</a><a href="extranet.html">Extranet</a><a href="multitier.html">Multitier</a><a href="ftp.html">FTP</a><a href="html.html">HTML</a><a href="web1.html">Web 1.0</a><a href="web2.html">Web 2.0</a><a href="web3.html">Web 3.0</a><a href="web4.html">Web 4.0</a>
+    </div>
+  </div>
+</nav>
+<div class="page-wrapper">
+  <div class="term-hero">
+    <div class="term-tag">Term 06 of 16</div>
+    <h1 class="term-title">Domain Name Server</h1>
+    <div class="term-abbr">DNS — The Internet'\''s Phone Book</div>
+    <div class="term-divider"></div>
+  </div>
+  
+<div class="content-block">
+  <h2>What is DNS?</h2>
+  <p>The Domain Name System (DNS) is the Internet's phone book. Computers communicate using numerical IP addresses (e.g. 142.250.80.46) but humans use domain names (e.g. google.com). DNS automatically translates domain names into IP addresses so browsers can find the correct server.</p>
+  <div class="highlight">Without DNS you would have to memorise the IP address of every website you want to visit!</div>
+</div>
+<div class="content-block">
+  <h2>DNS Resolution Process</h2>
+  <ul>
+    <li><strong>Step 1:</strong> Browser checks its local cache — if the IP is already saved, it skips the rest</li>
+    <li><strong>Step 2:</strong> Asks the DNS Resolver (your ISP's middleman)</li>
+    <li><strong>Step 3:</strong> Resolver asks a Root DNS Server — directs to the correct TLD server</li>
+    <li><strong>Step 4:</strong> TLD server (e.g. .com, .edu) directs to the Authoritative DNS server</li>
+    <li><strong>Step 5:</strong> Authoritative server returns the actual IP address</li>
+    <li><strong>Step 6:</strong> Browser connects to the server using that IP</li>
+  </ul>
+  <div class="diagram-box">
+    <div class="diagram-label">DNS Lookup Flow</div>
+    <svg width="100%" viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="e" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#00ff88"/></marker></defs>
+      <rect x="5" y="20" width="100" height="50" rx="4" fill="rgba(0,255,136,0.1)" stroke="#00ff88" stroke-width="1"/>
+      <text x="55" y="43" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">Browser</text>
+      <text x="55" y="58" fill="#888" font-family="DM Sans" font-size="9" text-anchor="middle">google.com?</text>
+      <line x1="107" y1="45" x2="153" y2="45" stroke="#00ff88" stroke-width="1.5" marker-end="url(#e)"/>
+      <rect x="155" y="20" width="110" height="50" rx="4" fill="rgba(124,58,237,0.1)" stroke="#7c3aed" stroke-width="1"/>
+      <text x="210" y="43" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">DNS Resolver</text>
+      <text x="210" y="58" fill="#888" font-family="DM Sans" font-size="9" text-anchor="middle">(Your ISP)</text>
+      <line x1="267" y1="45" x2="313" y2="45" stroke="#00ff88" stroke-width="1.5" marker-end="url(#e)"/>
+      <rect x="315" y="20" width="100" height="50" rx="4" fill="rgba(0,136,255,0.1)" stroke="#0088ff" stroke-width="1"/>
+      <text x="365" y="43" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">Root Server</text>
+      <line x1="417" y1="45" x2="453" y2="45" stroke="#00ff88" stroke-width="1.5" marker-end="url(#e)"/>
+      <rect x="455" y="20" width="100" height="50" rx="4" fill="rgba(0,136,255,0.1)" stroke="#0088ff" stroke-width="1"/>
+      <text x="505" y="43" fill="#f0f0f0" font-family="DM Sans" font-size="10" text-anchor="middle">TLD Server</text>
+      <text x="505" y="58" fill="#888" font-family="DM Sans" font-size="9" text-anchor="middle">(.com, .edu)</text>
+      <line x1="557" y1="45" x2="593" y2="45" stroke="#00ff88" stroke-width="1.5" marker-end="url(#e)"/>
+      <rect x="595" y="20" width="100" height="50" rx="4" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1"/>
+      <text x="645" y="38" fill="#00ff88" font-family="DM Sans" font-size="10" text-anchor="middle">Auth. DNS</text>
+      <text x="645" y="53" fill="#00ff88" font-family="DM Sans" font-size="9" text-anchor="middle">Returns IP ✓</text>
+    </svg>
+  </div>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Example_of_an_iterative_DNS_resolver.svg/600px-Example_of_an_iterative_DNS_resolver.svg.png" alt="DNS resolution diagram" class="term-image" onerror="this.style.display='none'"/>
+
+</div>
+<footer>Internet Terminology Reference Site &nbsp;|&nbsp; <a href="../index.html" style="color:var(--accent);text-decoration:none;">← Back to Home</a></footer>
+</body>
+</html>
